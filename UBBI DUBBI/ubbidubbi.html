@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="ubbidubbi.css">
+<title>Ubbi Dubbi Translator</title>
+<body>
+<center>
+<h2>Ubbi Dubbi Translator</h2>
+
+<p>Below is your Ubbi Dubbi translation:</p>
+
+<form>
+  Write your english phrase:<br>
+  <input type="text" name="Write your english phrase:" id= "%"><br>
+</form>
+
+  <button class="button" onclick="ubbidubbi()" id="button">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function ubbidubbi(){
+  var word = document.getElementById('%').value.toLowerCase();
+  var text = "";
+  for(i = 0; i < word.length; i++) {
+    if (word.charAt (i) === "a" || word.charAt (i) === "e" || word.charAt (i) === "i" || word.charAt (i) === "o" || word.charAt (i) === "u") {
+    var letter= "ub" + word.charAt(i)
+  } else {
+    var letter = word.charAt(i)
+  }
+      text += letter
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</center>
+</body>
+</html>

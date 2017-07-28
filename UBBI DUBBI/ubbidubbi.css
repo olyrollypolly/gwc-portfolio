@@ -1,0 +1,12 @@
+body{
+    background-color: #b000ff;
+    background-image: url("http://img15.deviantart.net/473e/i/2015/294/8/c/glactic_lions_by_gladddragon-d9dvs4m.png");
+    color: 202020;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
